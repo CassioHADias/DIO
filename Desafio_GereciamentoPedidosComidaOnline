@@ -1,0 +1,30 @@
+# Função para calcular o valor total já com o desconto aplicado 
+def valorFinal(pedidos, desconto):
+    total = 0
+    for pedido in pedidos:
+        total += pedido[1]
+    
+    if desconto == "10%":
+        total *= 0.9
+    elif desconto == "20%":
+        total *= 0.8
+      
+    return total
+
+def main():
+    n = int(input())
+    pedidos = []
+    for i in range(n):
+        nome, valor = input().split()
+        pedidos.append((nome, float(valor)))
+
+    desconto = input()
+
+    # Calcular o valor total com o cupom de desconto
+    valor_total = valorFinal(pedidos, desconto)
+
+    # Informar valor final
+    print(f"Valor total: {valor_total:.2f}")
+
+if __name__ == "__main__":
+    main()
