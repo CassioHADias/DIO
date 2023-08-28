@@ -1,0 +1,10 @@
+#Solicitar ao usuário nome do restaurante e tempo de entrega
+nomeRestaurante = input()
+tempoEstimadoEntrega = int(input())
+
+#TODO: Imprimir a saída no padrão definido no enunciado deste desafio.
+#Dica: Para simplificar a formatação, utilize o conceito de interpolação de strings.
+
+#Mensagem para o usuário
+resultado=f"O restaurante {nomeRestaurante} entrega em {tempoEstimadoEntrega} minutos."
+print(resultado)
