@@ -1,0 +1,12 @@
+valorPedido = int(input())
+
+#TODO: Criar as condições necessárias para impressão da saída conforme o enunciado.
+
+#Verifica se o cliente ganhou uma sobremesa
+if valorPedido >= 50:
+  resultado = "Parabens, você ganhou uma sobremesa gratis!"
+else:
+  resultado = "Que pena, você nao ganhou nenhum brinde especial."
+    
+#Exibe o resultado final
+print(resultado)
